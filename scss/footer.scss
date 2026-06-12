@@ -1,0 +1,50 @@
+@import "vars";
+.footer {
+  padding: 50px 0 74px;
+  .nav {
+    color: var(--secondary);
+    &__logo {
+      color: $orange;
+    }
+
+    &__item-link {
+      position: static;
+    }
+
+    &__log {
+      column-gap: 66px;
+    }
+
+    &__log-link--active {
+      color: #fff;
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .footer {
+    .nav {
+      align-items: baseline;
+      justify-content: space-around;
+
+      &__list {
+        flex-direction: column;
+        gap: 15px;
+      }
+
+      &__log {
+        flex-direction: column;
+      }
+    }
+  }
+}
+
+@media (max-width: 570px) {
+  .footer {
+    .nav {
+      flex-direction: column;
+      align-items: center;
+      row-gap: 40px;
+    }
+  }
+}

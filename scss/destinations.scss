@@ -1,0 +1,126 @@
+@import "vars";
+.destinations {
+  padding: 100px 0;
+  overflow-x: hidden;
+  &__inner {
+    display: flex;
+    column-gap: 50px;
+  }
+  &__content {
+    max-width: 456px;
+  }
+
+  &__title {
+    display: block;
+    font-size: 55px;
+    // line-height: 83px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    & span {
+      font-size: 30px;
+      line-height: 45px;
+    }
+  }
+
+  &__text {
+    color: var(--secondary);
+    font-size: 25px;
+    line-height: 38px;
+    margin-bottom: 60px;
+    width: 456px;
+  }
+
+  &__btn {
+    padding: 25px 44px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  &__slider {
+    width: 1110px;
+    flex-shrink: 0;
+  }
+}
+
+.slider {
+  position: relative;
+  height: 456px;
+  &__img {
+    width: 335px !important;
+    height: 402px;
+
+    object-fit: cover;
+    border-radius: 35px;
+    margin-top: 27px;
+    transition: 0.2s ease-in;
+  }
+
+  .center .slider__img {
+    width: 380px;
+    height: 456px;
+    margin-top: 0;
+  }
+
+  &__btn {
+    display: block;
+    width: 63px;
+    height: 63px;
+    border-radius: 50%;
+    background: linear-gradient(172deg, #ff7b4e 0%, #ff584e 100%), #8b8b8b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 5;
+  }
+
+  &__btn--prev {
+    left: -27px;
+  }
+  &__btn--next {
+    right: -27px;
+  }
+}
+@media (max-width: 1024px) {
+  .destinations {
+    &__slider {
+      width: 750px;
+    }
+  }
+}
+@media (max-width: 895px) {
+  .destinations {
+    &__inner {
+      flex-direction: column;
+      row-gap: 50px;
+    }
+    &__slider {
+      width: 1000px;
+      // margin: 0 auto;
+      margin-left: 50px;
+    }
+  }
+}
+@media (max-width: 768px) {
+  .destinations {
+    padding: 50px 0;
+    &__slider {
+      width: 700px;
+      margin: 0 auto;
+    }
+  }
+}
+@media (max-width: 580px) {
+  .destinations {
+    &__slider {
+      width: 500px;
+    }
+  }
+  .slider {
+    &__img {
+      margin: 0 auto;
+    }
+  }
+}
