@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GoTrip</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+      integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css"
+      integrity="sha512-OTcub78R3msOCtY3Tc6FzeDJ8N9qvQn1Ph49ou13xgA9VsH9+LRxoFU6EqLhW4+PKRfU+/HReXmSZXHEkpYoOA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header__top">
+          <nav class="nav">
+            <a class="nav__logo" href="#">GoTrip</a>
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a class="nav__item-link" href="#">Home</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__item-link" href="#">Services</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__item-link" href="#">Pricing</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__item-link" href="#">Contact</a>
+              </li>
+            </ul>
+            <ul class="nav__log">
+              <li>
+                <a class="nav__log-link" href="#"> Sign up </a>
+              </li>
+              <li>
+                <a class="nav__log-link nav__log-link--active" href="#">
+                  Login
+                </a>
+              </li>
+            </ul>
+            <button class="nav__toggle">
+              <div class="menu-icon-wrapper">
+                <div class="menu-icon"></div>
+              </div>
+            </button>
+          </nav>
+        </div>
+        <div class="header__row">
+          <div class="header__content">
+            <p class="header__content-text">exsplore the world</p>
+            <h1 class="header__content-title">
+              Explore The Natural Beauty Of Halmahera With Us
+            </h1>
+            <p class="header__content-subtitle">
+              explore the beauty of god's earth in a beautiful forest and have
+              fun
+            </p>
+            <button class="header__content-btn button">Exsplore Now</button>
+          </div>
+          <div class="header__img">
+            <img src="images/header/header-img.png" alt="image" />
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <section class="destinations">
+        <div class="container-right">
+          <div class="destinations__inner">
+            <div class="destinations__content">
+              <h2 class="destinations__title">
+                <span>Choice Of </span> Destinations
+              </h2>
+              <p class="destinations__text">
+                explore the beauty of god's earth in a beautiful forest and have
+                fun
+              </p>
+              <a class="destinations__btn button" href="#">Explore Now</a>
+            </div>
+            <div class="destinations__slider">
+              <div class="slider">
+                <div class="owl-carousel">
+                  <img class="slider__img" src="images/slider/01.jpeg" alt="" />
+                  <img
+                    class="slider__img slider__img--active"
+                    src="images/slider/02.jpeg"
+                    alt=""
+                  />
+                  <img class="slider__img" src="images/slider/03.jpeg" alt="" />
+                </div>
+                <button class="slider__btn slider__btn--prev">
+                  <img src="images/slider/arrow-left.svg" alt="prev-arrow" />
+                </button>
+                <button class="slider__btn slider__btn--next">
+                  <img src="images/slider/arrow-right.svg" alt="next-arrow" />
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="customers">
+        <div class="container">
+          <div class="customers__inner">
+            <img
+              class="customers__img"
+              src="images/customers/customers.jpeg"
+              alt="customers"
+            />
+            <div class="customers__content">
+              <h2 class="customers__title">What do customers say about us?</h2>
+              <div class="customers__user">
+                <img
+                  class="customers__user-img"
+                  src="images/customers/avatar.png"
+                  alt="avatar"
+                />
+                <div class="customers__user-descr">
+                  <h5 class="customers__user-name">Alpanasap</h5>
+                  <p class="customers__user-country">Japung, Indonesia</p>
+                </div>
+              </div>
+              <p class="customers__text">
+                Very satisfying service makes it comfortable, a beautiful place
+                in the world.
+              </p>
+              <img
+                class="customers__rating"
+                src="images/customers/stars-rating.svg"
+                alt="rating"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="explore">
+        <div class="container">
+          <div class="explore__inner">
+            <div class="explore__content">
+              <h3 class="explore__title">
+                Prepare Yourself And Start Exploring With Us.
+              </h3>
+              <p class="explore__text">
+                There's the best discount for you today.
+              </p>
+              <a class="explore__btn button" href="#"> Get Started </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="subscribe">
+        <div class="container">
+          <div class="subscribe__inner">
+            <h2 class="subscribe__title">
+              Subscribe <br />
+              To Our Newsletter
+            </h2>
+            <form class="subscribe__form" action="">
+              <input
+                class="subscribe__form-input"
+                type="email"
+                placeholder="Yourmail@mail.com"
+              />
+              <button class="subscribe__form-btn button" type="button">
+                Subscribe
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <div class="container">
+          <nav class="nav">
+            <a class="nav__logo" href="#">GoTrip</a>
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a class="nav__item-link nav__item-link--active" href="#"
+                  >Home</a
+                >
+              </li>
+              <li class="nav__item">
+                <a class="nav__item-link" href="#">Services</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__item-link" href="#">Pricing</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__item-link" href="#">Contact</a>
+              </li>
+            </ul>
+            <ul class="nav__log">
+              <li>
+                <a class="nav__log-link" href="#"> Sign up </a>
+              </li>
+              <li>
+                <a class="nav__log-link nav__log-link--active" href="#">
+                  Login
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </footer>
+    </main>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
+      integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+      integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
