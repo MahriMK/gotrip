@@ -1,0 +1,103 @@
+.subscribe {
+  padding: 35px 0 56px;
+}
+.subscribe__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.subscribe__title {
+  max-width: 494px;
+  font-weight: 600;
+  font-size: 55px;
+  line-height: 83px;
+  margin-bottom: 60px;
+}
+.subscribe__form {
+  border-radius: 35px;
+  background: linear-gradient(0deg, #fff 0%, #fff 100%), #c4c4c4;
+  padding: 12px 15px 12px 46px;
+  width: 800px;
+  display: flex;
+  justify-content: space-between;
+}
+.subscribe__form-input {
+  border: none;
+  width: 400px;
+  font-size: 24px;
+  line-height: 36px;
+  outline: none;
+}
+.subscribe__form-input::-moz-placeholder {
+  font-size: 24px;
+  line-height: 36px;
+  color: var(--secondary);
+}
+.subscribe__form-input::placeholder {
+  font-size: 24px;
+  line-height: 36px;
+  color: var(--secondary);
+}
+.subscribe__form-btn {
+  padding: 34px;
+  width: 300px;
+  border-radius: 35px;
+  font-size: 25px;
+  line-height: 38px;
+  font-weight: 600;
+}
+
+@media (max-width: 840px) {
+  .subscribe {
+    padding: 35px 0;
+  }
+  .subscribe__title {
+    font-size: 44px;
+    line-height: 60px;
+  }
+  .subscribe__form {
+    width: 100%;
+    background: none;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 30px;
+    padding: 12px 15px;
+  }
+  .subscribe__form-input {
+    padding: 30px;
+    border-radius: 40px;
+  }
+  .subscribe__form-btn {
+    padding: 20px;
+    width: 220px;
+    font-size: 22px;
+    line-height: 30px;
+  }
+}
+@media (max-width: 480px) {
+  .subscribe__title {
+    font-size: 30px;
+    line-height: 45px;
+    margin-bottom: 30px;
+  }
+  .subscribe__form {
+    width: 100%;
+    padding: 12px 12px;
+  }
+  .subscribe__form-input {
+    width: 100%;
+  }
+  .subscribe__form-input::-moz-placeholder {
+    font-size: 18px;
+  }
+  .subscribe__form-input::placeholder {
+    font-size: 18px;
+  }
+  .subscribe__form-btn {
+    padding: 16px;
+    width: 180px;
+    font-size: 16px;
+    line-height: 22px;
+  }
+}/*# sourceMappingURL=subscribe.css.map */

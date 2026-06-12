@@ -1,0 +1,121 @@
+.customers {
+  padding: 100px 0;
+}
+.customers__inner {
+  display: flex;
+  -moz-column-gap: 68px;
+       column-gap: 68px;
+}
+.customers__img {
+  max-width: 478px;
+  max-height: 537px;
+  border-radius: 60px;
+}
+.customers__content {
+  max-width: 565px;
+}
+.customers__title {
+  font-size: 45px;
+  line-height: 68px;
+  font-weight: 500;
+  margin-bottom: 35px;
+}
+.customers__user {
+  display: flex;
+  -moz-column-gap: 40px;
+       column-gap: 40px;
+  align-items: center;
+  margin-bottom: 60px;
+}
+.customers__user-img {
+  width: 134px;
+  height: 134px;
+  border-radius: 50%;
+  background-color: #ff7c4e;
+}
+.customers__user-name {
+  font-size: 33px;
+  line-height: 50px;
+}
+.customers__user-country {
+  display: block;
+  font-size: 25px;
+  line-height: 38px;
+  font-weight: 400;
+  color: var(--secondary);
+}
+.customers__text {
+  max-width: 491px;
+  font-size: 22px;
+  line-height: 33px;
+  color: var(--secondary);
+  margin-bottom: 30px;
+}
+
+@media (max-width: 1024px) {
+  .customers__img {
+    max-width: 50%;
+    max-height: 50%;
+  }
+  .customers__inner {
+    -moz-column-gap: 40px;
+         column-gap: 40px;
+  }
+  .customers__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  .customers__title {
+    font-size: 35px;
+    line-height: 45px;
+  }
+  .customers__user {
+    margin-bottom: 45px;
+  }
+  .customers__user-img {
+    width: 100px;
+    height: 100px;
+  }
+  .customers__user-name {
+    font-size: 25px;
+    line-height: 30px;
+  }
+  .customers__user-country, .customers__text {
+    font-size: 18px;
+    line-height: 24px;
+  }
+}
+@media (max-width: 800px) {
+  .customers {
+    padding: 35px 0;
+  }
+  .customers__inner {
+    flex-direction: column;
+    align-items: center;
+    row-gap: 50px;
+  }
+  .customers__img {
+    max-width: 100%;
+  }
+  .customers__content {
+    max-width: 440px;
+  }
+  .customers__rating {
+    width: 50%;
+  }
+}
+@media (max-width: 370px) {
+  .customers__title {
+    font-size: 26px;
+    line-height: 32px;
+  }
+  .customers__user-name {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .customers__user-country {
+    font-size: 14px;
+    line-height: 18px;
+  }
+}/*# sourceMappingURL=customers.css.map */
